@@ -41,3 +41,53 @@ function totaleCorsa(prezzoPartenza, prezzoArrivo) {
 const corsa = totaleCorsa(26, 32);
 console.log('il totale della corsa è', corsa, '€');
 
+
+// Scrivi una funzione che, dato l'anno di nascita e il genere (M/F), calcoli quanti anni mancano per raggiungere l'età pensionabile (fissata a 67 anni per gli uomini e 62 per le donne).
+
+
+/**
+ * calcola quanti anni mancano alla pensione
+ * @param {number} età 
+ * @param {string} genere 
+ */
+function pensione(età, genere) {
+
+    const etàUomo = 67;
+    const etàDonna = 62;
+
+    if (genere === 'M') {
+
+        const pensioneUomo = etàUomo - età;
+
+        return 'Ti mancano ' + pensioneUomo + ' anni alla pensione'
+
+
+    } if (genere === 'F') {
+
+        const pensioneDonna = etàDonna - età;
+
+        return 'Ti mancano ' + pensioneDonna + ' anni alla pensione'
+    }
+
+}
+
+const anniUtente = Number(prompt('digita la tua età'));
+
+const genereUtente = prompt('M/F');
+
+const calcolo = pensione(anniUtente, genereUtente);
+
+console.log(calcolo);
+
+
+
+
+
+
+
+
+
+
+
+
+
