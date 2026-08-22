@@ -80,6 +80,42 @@ const calcolo = pensione(anniUtente, genereUtente);
 console.log(calcolo);
 
 
+// Un professore deve convertire un voto numerico in un giudizio. Scrivi una funzione che restituisca "Insufficiente", "Sufficiente" o "Ottimo" in base al punteggio.
+
+
+/**
+ * converte i voti in 'insuff', 'suff', 'ottimo'.
+ * @param {number} punteggio 
+ */
+function voto(punteggio) {
+
+    if (punteggio <= 5) {
+
+        return 'Il tuo voto è insufficiente'
+
+    } if (punteggio <= 8) {
+
+        return 'Il tuo voto è sufficiente'
+
+    } else {
+
+        return 'Il tuo voto è ottimo'
+
+    }
+
+
+
+}
+
+const votoFinale = voto(7.5);
+
+console.log(votoFinale);
+
+
+
+
+
+
 
 
 
