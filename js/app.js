@@ -217,6 +217,41 @@ console.log(giorni);
 
 
 
+// Etichetta l'utente in base alla sua età. Sotto i 18 anni "Minorenne", "Giovane Adulto" tra 18 e 35, "Adulto" se tra 36 e 60, "Senior" oltre 60.
+
+/**
+ * una funzione che ritorna un parametro legato all'età
+ * @param {Number} età 
+ * @returns parametro legato all'età
+ */
+function parametriUtente(età) {
+
+    if (età <= 18) {
+        return 'Minorenne';
+
+
+    } if (età >= 18 && età <= 35) {
+        return 'Giovane Adulto';
+
+
+    } if (età >= 36 && età <= 60) {
+        return 'Adulto';
+
+
+    } else
+        return 'Senior';
+
+
+}
+
+const laTuaEtà = parametriUtente(59);
+console.log(laTuaEtà);
+
+
+
+
+
+
 
 
 
