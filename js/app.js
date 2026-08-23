@@ -112,6 +112,46 @@ const votoFinale = voto(7.5);
 console.log(votoFinale);
 
 
+// Stai organizzando un evento. Scrivi una funzione che ti dica quanti giorni ha un determinato mese.
+
+/**
+ * riporta quanti giorni ha un determinato mese
+ * @param {string} mese 
+ */
+function giorniDelMese(mese) {
+
+    const trentuno = ['gennaio', 'marzo', 'maggio', 'luglio', 'agosto', 'ottobre', 'dicembre'];
+
+    const ventotto = ['febbraio'];
+
+    const trenta = ['aprile', 'giugno', 'settembre', 'novembre'];
+
+    if (trentuno.includes(mese)) {
+
+        return 'Questo mese ha 31 giorni';
+
+    } if (ventotto.includes(mese)) {
+
+        return 'Questo mese ha 28 giorni';
+
+    } if (trenta.includes(mese)) {
+
+        return 'Questo mese ha 30 giorni';
+
+    }
+
+
+
+}
+
+
+
+const infoMese = giorniDelMese('aprile');
+
+console.log(infoMese);
+
+
+
 
 
 
