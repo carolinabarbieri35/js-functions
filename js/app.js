@@ -170,6 +170,27 @@ function hourConverter(minutiTotali) {
 console.log(hourConverter(236));
 
 
+// Finisce l'anno scolastico e vuoi fare la media dei tuoi voti. Scrivi una funzione che riceve tre voti numerici e restituisce la media aritmetica.
+
+/**
+ * restituisce la media dei voti
+ * @param {Number} voto1 
+ * @param {Number} voto2 
+ * @param {Number} voto3 
+ */
+function mediaVoti(voto1, voto2, voto3) {
+
+    const somma = (voto1 + voto2 + voto3) / 3;
+
+    return somma;
+
+}
+
+const media = mediaVoti(5, 10, 6);
+console.log('La tua media dei voti è ', media);
+
+
+
 
 
 
