@@ -190,6 +190,35 @@ const media = mediaVoti(5, 10, 6);
 console.log('La tua media dei voti è ', media);
 
 
+// Un calendario digitale deve mostrare il giorno esteso. Scrivi una funzione che riceve un numero da 1 a 7 e restituisce il nome del giorno corrispondente (1 = Lunedì, ..., 7 = Domenica). Se il numero non è valido, restituisce "Errore".
+
+/**
+ * la funziona ti indica il nome completo del giorno della settimana datogli un valore da 1 a 7 
+ * @param {Number} giorno 
+ * @returns giorni della settimana
+ */
+function calendario(giorno) {
+
+    const settimana = ['Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato', 'Domenica'];
+
+    if (giorno < 1 || giorno > 7) {
+
+        return 'Errore';
+
+    }
+
+    return settimana[giorno - 1];
+}
+
+
+
+const giorni = calendario(1);
+console.log(giorni);
+
+
+
+
+
 
 
 
