@@ -249,6 +249,40 @@ console.log(laTuaEtà);
 
 
 
+// Un tracker di spedizioni usa codici numerici. Scrivi una funzione che riceve un codice (1, 2, 3) e restituisce "In elaborazione" per 1, "Spedito" per 2, "Consegnato" per 3. Se il codice non esiste, restituisce "Stato sconosciuto".
+
+/**
+ * una funziona che indica lo stato della consegna di un ordine
+ * @param {Number} codice1 
+ * @param {Number} codice2 
+ * @param {Number} codice3 
+ * @returns lo stato della consegna
+ */
+function statoConsegna(codice1, codice2, codice3) {
+
+    const datiConsegna = ['In Elaborazione', 'Spedito', 'Consegnato'];
+
+    if (datiConsegna < 1 || datiConsegna > 3) {
+
+        return 'Stato sconosciuto';
+
+
+
+    }
+
+    const stato = datiConsegna[codice1 - 1];
+
+    return stato;
+
+}
+
+const laMiaConsegna = statoConsegna(3);
+
+console.log('Il tuo ordine è ', laMiaConsegna);
+
+
+
+
 
 
 
