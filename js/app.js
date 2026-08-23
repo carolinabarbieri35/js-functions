@@ -151,6 +151,26 @@ const infoMese = giorniDelMese('aprile');
 console.log(infoMese);
 
 
+// Hai la durata di un film in minuti totali. Scrivi una funzione che la converta in un formato più leggibile "X ore e Y minuti".
+
+/**
+ * converte i minuti in x ore e y minuti
+ * @param {number} minuti 
+ */
+function hourConverter(minutiTotali) {
+
+    const ore = Math.floor(minutiTotali / 60);
+
+    const minutiRimanenti = minutiTotali % 60;
+
+    return ore + ' ore e ' + minutiRimanenti + ' minuti';
+
+}
+
+console.log(hourConverter(236));
+
+
+
 
 
 
